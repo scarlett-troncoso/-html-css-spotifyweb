@@ -40,17 +40,14 @@
     }
 
     .debug .recently{
-        height: 250px;
         background-color: rgb(223, 250, 116);
     }
 
     .debug .creato{
-        height: 250px;
         background-color: aqua;
     }
 
     .debug .artisti{
-        height: 190px; /*100 + 90 di reproduction footer*/
         background-color: rgb(223, 250, 116);
     }
 
@@ -68,9 +65,8 @@
     width: 100%;
     position: fixed;
     z-index: 0;
-    align-items: center;
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
 }
 
 .sidebar{
@@ -93,7 +89,24 @@
     justify-content: flex-end;
 }
 
-.cards{
+.line_menu{
+    display: flex;
+    padding: 80px 15px 0 15px; /*pdding=altezza di upgrade*/
+    justify-content: center;
+    width: calc(100% - 200px);
+    align-items: center;
+}
+
+.line_menu> .row{
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    /*flex-direction: row;*/
+    list-style: none;
+    gap: 20px;
+}
+
+.cards_cont{
     width: calc(100% - 200px);
     flex-wrap: wrap;
     display: flex;
@@ -119,7 +132,17 @@
 /* breackpoint xs */
 
 @media screen and (max-width:480px) {
-    
+    .sidebar{
+        width: 45px;
+    }
+
+    .cards_cont{
+        width: calc(100% - 45px);
+    }
+
+    .line_menu{
+        width: calc(100% - 45px);
+    }
 }
 
 /* breackpoint s */

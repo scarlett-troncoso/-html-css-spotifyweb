@@ -59,6 +59,10 @@ main{
     display: flex;
 }
 
+.just_center{
+    justify-content: center;
+}
+
 .white{
     color: var(--white-normal);
 }
@@ -74,7 +78,7 @@ main{
         background-color: rgba(0, 0, 255, 0.33);
     }
 
-    .btn_upgrade{
+    .debug .btn_upgrade{
         background-color: blanchedalmond;
         height: 50px;
         width: 150px;
@@ -121,6 +125,17 @@ main{
     background-color: var(--black-trans);
 }
 
+.btn_upgrade> a{
+    height: 25px;
+    width: 300px;
+    border: 1px solid var(--white-normal);
+    font-size: small;
+    text-decoration: none;
+    color: var(--white-normal);
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
 .logo{
     width: 155px;
 } 
@@ -152,18 +167,17 @@ main{
 .playlist{
     padding-left: 1rem;
     list-style: none;
-}
-
-.plus{
-    font-size: xx-large;
-    width: 2rem;
     line-height: 2rem;
-    background-color: var(--grey-playlist);
-    text-align: center;
-    color: var(--dark-primary);
 }
 
-
+.icon_plus{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    background-color: var(--grey-playlist);
+    color: var(--dark-primary);
+    font-size: x-large;
+}
 
 /* #endregion header*/
 
@@ -253,6 +267,31 @@ main::-webkit-scrollbar-thumb {
     bottom: 0;
     position: fixed;
     z-index: 2;
+}
+
+.reproduction> .row{
+    width: 100%;
+    color: var(--grey-playlist);
+}
+
+.col-3{
+    width: calc(100% / 12 * 3);
+}
+
+.img_reprod{
+    height: 90px;
+    width: 90px;
+}
+
+.img_reprod> img{
+    width: 100%;
+}
+
+.time{
+    width:100px;
+    height: 5px;
+    background-color: var(--grey-playlist);
+    border-radius: 20px;
 }
 /* #endregion footer*/
 

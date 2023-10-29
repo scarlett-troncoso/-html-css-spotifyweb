@@ -4,35 +4,37 @@
     box-sizing: border-box;
 }
 
+/*Utility*/
+.padd05{
+    padding: 0.5rem;
+}
+
+.padd1{
+    padding: 1rem;
+}
+
+
 /* #region debug */
 /* Debug */
     .debug .upgrade{
-        height: 90px;
-        width: 100%;
         background-color: blue;
-        position: absolute;
-        z-index: 0;
+    }
+
+    .btn_upgrade{
+        background-color: blanchedalmond;
+        height: 50px;
+        width: 150px;
     }
 
     .debug .sidebar{
-        height: 100vh;
-        width: 25%;
         background-color: rgb(247, 114, 227);
-        position: fixed;
-        z-index: 1;
     }
 
     .debug .reproduction{
-        height: 90px;
-        width: 100%;
         background-color: rgb(95, 247, 154);
-        position: absolute;
-        bottom: 0;
-        position: fixed;
-        z-index: 2;
     }
 
-    .debug .menu_content{
+    .debug .line_menu{
         height: 190px; /*100 + 90 di height upgrade*/
         background-color: aqua;
     }
@@ -51,4 +53,89 @@
         height: 190px; /*100 + 90 di reproduction footer*/
         background-color: rgb(223, 250, 116);
     }
+
+    .debug .card{
+        height: 150px;
+        width: 150px;
+        background-color: rgb(68, 67, 67);
+    }
 /* #endregion debug */
+
+
+/* #region header */
+.upgrade{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.sidebar{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+}
+
+/* #endregion header*/
+
+/* #region main */
+#side_main{
+    overflow-y: scroll;
+}
+
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cards{
+    width: calc(100% - 200px);
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+
+/* #endregion main*/
+
+/* #region footer*/
+.reproduction{
+    height: 90px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+}
+/* #endregion footer*/
+
+
+
+/* Media */
+
+/* breackpoint xs */
+
+@media screen and (max-width:480px) {
+    
+}
+
+/* breackpoint s */
+
+@media screen and (min-width:481px) { /* screenshot s coincide con 550 px */
+    
+}
+
+/* breackpoint md */
+
+@media screen and (min-width:768px) {
+    
+}
+
+/* breackpoint lg */
+
+@media screen and (min-width:1200px) { /*screenshot lg coincide con 1270px*/
+    
+}

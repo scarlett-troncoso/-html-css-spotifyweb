@@ -25,6 +25,23 @@ main{
     justify-content: flex-end;
 }
 
+:root{
+    --black-trans: rgba(0, 0, 0, 0.259);
+    --dark-primary: #000000;
+    --grey-dark: #141922;
+    --grey-medium: #787878;
+    --green-select: #adff2f;
+    --white-dark: #d2d2d2;
+    --white-normal: white;
+    --grey-footer: #282828;
+    --grey-time: #5a5a5a;
+    --white-time: #c1c1c1;
+    --grey-jhon: #808080;
+    --grey-playlist: #a3a3a3;
+    --grey-scrollbar: #c8c8c8;
+
+}
+
 /*Utility*/
 .padd05{
     padding: 0.5rem;
@@ -40,6 +57,14 @@ main{
 
 .d_flex{
     display: flex;
+}
+
+.white{
+    color: var(--white-normal);
+}
+
+.green{
+    background-color: var(--green-select);
 }
 
 
@@ -93,6 +118,7 @@ main{
     z-index: 1;
     display: flex;
     justify-content: flex-end;
+    background-color: var(--black-trans);
 }
 
 .logo{
@@ -104,21 +130,37 @@ main{
     width: 200px;
     position: fixed;
     z-index: 2;
+    background-color: var(--dark-primary);
+    color: var(--grey-medium);
 }
 
 .select{
-    height: 1.5rem;
-    width: 0.25rem;
-    background-color: yellow;
+    height: 2rem;
+    width: 0.15rem;
 }
 
 .icon_text{
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .icon{
     width: 2.5rem;
     text-align: center;
+    font-size: 1.25rem;
+}
+
+.playlist{
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.plus{
+    font-size: xx-large;
+    width: 2rem;
+    line-height: 2rem;
+    background-color: var(--grey-playlist);
+    text-align: center;
+    color: var(--dark-primary);
 }
 
 
@@ -129,17 +171,23 @@ main{
 
 /* section menu_content*/
 
+main{
+    background-color: var(--grey-dark);
+}
+
 section{
     padding: 1rem o;
 }
 
 .line_menu{
     display: flex;
-    padding: 90px 15px 25px 15px; /*pdding=altezza di upgrade*/
+    padding: 90px 15px 15px 15px; /*pdding=altezza di upgrade*/
     justify-content: center;
     width: calc(100% - 200px);
     align-items: center;
     position: fixed;
+    background-color: var(--grey-dark);
+    color: var(--grey-medium);
 }
 
 .line_menu> .row{
@@ -157,10 +205,11 @@ section{
     flex-wrap: wrap;
     display: flex;
     gap: 8px;
+    color: var(--white-normal);
 }
 
 .card{
-    height: 150px;
+    height: 200px;
     width: 150px;
 }
 
@@ -196,7 +245,9 @@ main::-webkit-scrollbar-thumb {
 
 
 /* #region footer*/
+
 .reproduction{
+    background-color: var(--grey-footer);
     height: 90px;
     width: 100%;
     bottom: 0;

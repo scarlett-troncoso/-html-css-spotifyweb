@@ -6,6 +6,7 @@
 }
 
 body{
+    font-family: Verdana;
     overflow: auto;
 }
 
@@ -31,6 +32,14 @@ main{
 
 .padd1{
     padding: 1rem;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.d_flex{
+    display: flex;
 }
 
 
@@ -86,6 +95,10 @@ main{
     justify-content: flex-end;
 }
 
+.logo{
+    width: 155px;
+} 
+
 .sidebar{
     height: 100%;
     width: 200px;
@@ -93,17 +106,38 @@ main{
     z-index: 2;
 }
 
+.select{
+    height: 1.5rem;
+    width: 0.25rem;
+    background-color: yellow;
+}
+
+.icon_text{
+    line-height: 1.5rem;
+}
+
+.icon{
+    width: 2.5rem;
+    text-align: center;
+}
+
+
+
 /* #endregion header*/
 
 /* #region main */
 
 /* section menu_content*/
 
+section{
+    padding: 1rem o;
+}
+
 .line_menu{
     display: flex;
     padding: 90px 15px 25px 15px; /*pdding=altezza di upgrade*/
     justify-content: center;
-    width: 100%;
+    width: calc(100% - 200px);
     align-items: center;
     position: fixed;
 }
@@ -117,13 +151,9 @@ main{
 }
 
 /* *****SECTIONS RECENTLY, CREATO E ARTISTI***** */
-
 .cards_cont{
-    padding-left: 210px;
-} 
-
-.cards_cont{
-    width: 100%;
+    width: calc(100% - 200px);
+    /*padding-left: 210px;*/
     flex-wrap: wrap;
     display: flex;
     gap: 8px;
@@ -146,8 +176,9 @@ main{
 }
 
 /* ***********   SCROLLBAR   ********** */
+
 main::-webkit-scrollbar {
-    width: 1em;
+    width: 10px;
 }
  
 main::-webkit-scrollbar-track {
@@ -155,8 +186,10 @@ main::-webkit-scrollbar-track {
 }
  
 main::-webkit-scrollbar-thumb {
-  background-color: rgb(249, 8, 8);
-  outline: 1px solid rgb(144, 112, 112);
+  background-color: rgb(88, 88, 88);
+  /*outline: 1px solid rgb(126, 125, 125);*/
+  width: 5px;
+  border-radius: 20px;
 }
 
 /* #endregion main*/
@@ -183,7 +216,8 @@ main::-webkit-scrollbar-thumb {
     }
 
     .cards_cont, .line_menu{
-        padding-left: 55px;
+        /*padding-left: 55px;*/
+        width: calc(100% - 45px);
     }
 }
 
@@ -191,15 +225,18 @@ main::-webkit-scrollbar-thumb {
 
 @media screen and (min-width:481px) and (max-width:767px) { /* screenshot s coincide con 550 px */
     .cards_cont, .line_menu{
-        padding-left: 210px;
+        /*padding-left: 210px;*/
+        width: calc(100% - 200px);
     }
 }
 
 /* breackpoint md */
 
 @media screen and (min-width:768px) and (max-width:1199px) {
+
     .cards_cont, .line_menu{
-        padding-left: 210px;
+        /*padding-left: 210px;*/
+        width: calc(100% - 200px);
     }
 
     .card{

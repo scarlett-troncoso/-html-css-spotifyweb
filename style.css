@@ -35,7 +35,6 @@
     }
 
     .debug .line_menu{
-        height: 190px; /*100 + 90 di height upgrade*/
         background-color: aqua;
     }
 
@@ -52,8 +51,6 @@
     }
 
     .debug .card{
-        height: 150px;
-        width: 150px;
         background-color: rgb(68, 67, 67);
     }
 /* #endregion debug */
@@ -91,7 +88,7 @@
 
 .line_menu{
     display: flex;
-    padding: 80px 15px 0 15px; /*pdding=altezza di upgrade*/
+    padding: 90px 15px 25px 15px; /*pdding=altezza di upgrade*/
     justify-content: center;
     width: calc(100% - 200px);
     align-items: center;
@@ -110,7 +107,16 @@
     width: calc(100% - 200px);
     flex-wrap: wrap;
     display: flex;
-    gap: 10px;
+    gap: 8px;
+}
+
+.card{
+    height: 160px;
+    width: 160px;
+}
+
+.card> img{
+    width: 100%;
 }
 
 /* #endregion main*/
@@ -147,18 +153,23 @@
 
 /* breackpoint s */
 
-@media screen and (min-width:481px) { /* screenshot s coincide con 550 px */
+@media screen and (min-width:481px) and (max-width:767px) { /* screenshot s coincide con 550 px */
     
 }
 
 /* breackpoint md */
 
-@media screen and (min-width:768px) {
-    
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .card{
+        height: 125px;
+        width: 125px;
+    }
 }
 
 /* breackpoint lg */
 
 @media screen and (min-width:1200px) { /*screenshot lg coincide con 1270px*/
-    
+    .cards_cont{
+        gap: 10px;
+    }
 }

@@ -79,6 +79,17 @@ main{
     background-color: var(--green-select);
 }
 
+.font_s{
+    font-size: small;
+}
+
+.font_xxs{
+    font-size: xx-small;
+}
+
+.font_xl{
+    font-size: x-large;
+}
 
 /* #region debug */
 /* Debug */

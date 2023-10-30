@@ -6,8 +6,10 @@
 }
 
 body{
-    font-family: Verdana;
     overflow: auto;
+    font-family: 'Montserrat';/*, sans-serif;
+    /*font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;*/
 }
 
 main{
@@ -63,12 +65,20 @@ main{
     display: flex;
 }
 
+.d_none{
+    display: none;
+}
+
 .just_center{
     justify-content: center;
 }
 
 .just_end{
     justify-content: end;
+}
+
+.align_cnt{
+    align-items: center;
 }
 
 .white{
@@ -81,6 +91,39 @@ main{
 
 .font_s{
     font-size: small;
+}
+
+.font_xs{
+    font-size: x-small;
+}
+
+.xs_bold{
+    font-size: x-small;
+    font-weight: 600;
+}
+
+.font_65{
+    font-size: 0.65rem;
+}
+
+.bold_65{
+    font-size: 0.65rem;
+    font-weight: bold;
+}
+
+.light_bold_65{
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+.bold_75{
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.x_bold_75{
+    font-size: 0.75rem;
+    font-weight: 800;
 }
 
 .font_xxs{
@@ -145,21 +188,24 @@ main{
 }
 
 .btn_upgrade> a{
-    height: 25px;
-    width: 300px;
     border: 1px solid var(--white-normal);
-    font-size: small;
     text-decoration: none;
     color: var(--white-normal);
     border-radius: 25px;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    padding: 0.5rem 1.75rem 0.5rem 1.75rem;
 }
 
 .logo{
     width: 155px;
 } 
 
+.logo_small{
+    width: 80%;
+    margin: auto;
+}
+
 .sidebar{
+    position: relative; /*ultimo*/
     height: 100%;
     width: 200px;
     position: fixed;
@@ -196,6 +242,17 @@ main{
     background-color: var(--grey-playlist);
     color: var(--dark-primary);
     font-size: x-large;
+    margin-right: 0.5rem;
+}
+
+.utente{
+    position: absolute; /*ultimo*/
+    bottom: 65px;
+    width: 100%;
+}
+
+.installa> i, .jhon> i{
+    padding: 0 0.5rem;
 }
 
 /* #endregion header*/
@@ -229,6 +286,7 @@ section{
     flex-wrap: wrap;
     list-style: none;
     gap: 20px;
+    font-weight: bold;
 }
 
 /* *****SECTIONS RECENTLY, CREATO E ARTISTI***** */
@@ -293,6 +351,16 @@ main::-webkit-scrollbar-thumb {
     color: var(--grey-playlist);
 }
 
+.sinister_brano{
+    padding-left: 0.5rem;
+}
+
+.bar_reproduction> div,
+.right> div,
+.cuore_folder> div{
+    padding: 0 0.5rem;
+}
+
 .col-4{
     width: calc(100% / 12 * 4);
 }
@@ -307,22 +375,16 @@ main::-webkit-scrollbar-thumb {
 }
 
 .bar{
-    width:150px;
-    height: 4px;
+    width:350px;
+    height: 3px;
     background-color: var(--grey-playlist);
     border-radius: 20px;
+    margin: 0 1rem;
 }
 
 .bar.vol{
     width:100px;
-}
-
-.center{
-    margin: auto; /*vedere perche il margine funziona in verticale qui*/
-}
-
-.left, .right{
-    align-items: center;
+    margin: 0;
 }
 /* #endregion footer*/
 
@@ -336,10 +398,29 @@ main::-webkit-scrollbar-thumb {
         width: 45px;
     }
 
+    .d_none_xs{
+        display: none;
+    } 
+
+    .d_block_xs{
+        display: block;
+    }
+
+    .logo{
+        width: 45px;
+        padding: 0.5rem;
+    }
+
     .cards_cont, .line_menu{
         /*padding-left: 55px;*/
         width: calc(100% - 45px);
     }
+
+    .cuore_folder{
+        display: block;
+    }
+
+    
 }
 
 /* breackpoint s */
@@ -348,6 +429,10 @@ main::-webkit-scrollbar-thumb {
     .cards_cont, .line_menu{
         /*padding-left: 210px;*/
         width: calc(100% - 200px);
+    }
+
+    .cuore_folder{
+        display: block;
     }
 }
 

@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Spotify web</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="d">
     <header id="side_header">
         <div class="upgrade padd1">
-            <div class="btn_upgrade">
+            <div class="btn_upgrade light_bold_65">
                 <a href="#">EFFETTUA L'UPGRADE </a>
             </div>
         </div>
         <div class="sidebar">
             <div class="logo padd1">
-                <img src="./img/logo.svg" alt="">
+                <img class="d_none_xs" src="./img/logo.svg" alt="">
+                <img class="logo_small d_none d_block_xs" src="./img/logo-small.svg" alt="">
             </div>
-            <ul>
+            <ul class="bold_65">
                 <li class="d_flex">
                     <div class="select green"></div>
                     <div class="icon_text d_flex">
                         <div class="icon">
                             <i class="fa-solid fa-house"></i>
                         </div>
-                        <div class="white">Home</div>
+                        <div class="white d_none_xs">Home</div>
                     </div>
                 </li>
                 <li class="d_flex">
@@ -34,7 +38,7 @@
                         <div class="icon">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
-                        <div>Cerca</div>
+                        <div class="d_none_xs">Cerca</div>
                     </div>
                 </li>
                 <li class="d_flex">
@@ -43,44 +47,56 @@
                         <div class="icon">
                             <i class="fa-solid fa-lines-leaning"></i>
                         </div>
-                        <div>La tua libreria</div>
+                        <div class="d_none_xs">La tua libreria</div>
                     </div>
                 </li>
             </ul>
 
-            <ul class="playlist">
-                <li>PLAYLIST</li>
+            <ul class="playlist d_none_xs">
+                <li class="x_bold_75">PLAYLIST</li>
                 <li>
                     <div class="icon_text d_flex">                     
                         <div class="icon_plus">
                             <strong>+</strong>
                         </div>
-                        <div>Crea Playlist</div>
+                        <div class="bold_75">Crea Playlist</div>
                     </div>
                 </li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
-                <li>Nome Playlist</li>
+                <li class="bold_65">Nome Playlist</li>
+                <li class="bold_65">Nome Playlist</li>
+                <li class="bold_65">Nome Playlist</li>
+                <li class="bold_65">Nome Playlist</li>
+                <li class="bold_65">Nome Playlist</li>
+                <li class="bold_65">Nome Playlist</li>
+                <li class="bold_65">Nome Playlist</li>
             </ul>
+            <div class="utente">
+                <div class="padd05">
+                    <div class="installa xs_bold">
+                        <i class="fa-regular fa-circle-down "></i>
+                        <strong class="d_none_xs">Installa app</strong>
+                    </div>
+                    <div class="padd05 d_none_xs"><hr></div>
+                    <div class="jhon x_bold_75">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <strong class="d_none_xs">Jhon Doe</strong>
+                    </div>
+                </div>
+             </div>
         </div>
-        
     </header>
 
     <Main id="side_main">
         <section class="menu_content">
             <div class="container">
                 <div class="line_menu">
-                    <ul class="row">
-                        <li>LOREM</li>
-                        <li>LOREM</li>
-                        <li>LOREM</li>
-                        <li>LOREM LOREM</li>
-                        <li>LOREM</li>
-                        <li>LOREM</li>
+                    <ul class="row font_65">
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
                     </ul>
                 </div>
             </div>
@@ -158,62 +174,64 @@
     <footer id="side_footer">
         <div class="reproduction d_flex padd05">
             <div class="row d_flex">
-                <div class="left col-4 d_flex">
+                <div class="left col-4 d_flex align_cnt">
                     <div class="img_reprod">
                         <img src="./img/sinister.jpeg" alt="">
                     </div>
-                    <div class="padd05">
+                    <div class="sinister_brano">
                         <strong class="white font_s">Sinister</strong> <br>
                         <div class="font_xxs"> Brano nome</div>
                     </div>
-                    <div class="padd05">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="padd05">
-                        <i class="fa-regular fa-folder"></i>
+                    <div class="cuore_folder d_flex font_s padd1">
+                        <div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-folder"></i>
+                        </div>
                     </div>
                 </div>
 
                 <div class="center col-4">
-                    <div class="bar_reproduction d_flex just_center white">
-                        <div class="padd05 font_s">
+                    <div class="bar_reproduction d_flex just_center align_cnt white">
+                        <div class="font_s">
                             <i class="fa-solid fa-shuffle"></i>
                         </div>
-                        <div class="padd05">
+                        <div>
                             <i class="fa-solid fa-backward-step"></i>
                         </div>
-                        <div class="padd05 font_xl">
+                        <div class="font_xl">
                             <i class="fa-regular fa-circle-play"></i>
                         </div>
-                        <div class="padd05">
+                        <div>
                             <i class="fa-solid fa-forward-step"></i>
                         </div>
-                        <div class="padd05">
+                        <div class="font_s">
                             <i class="fa-solid fa-rotate-right"></i>
                         </div>
                     </div>
 
-                    <div class="bar_time d_flex just_center white">
-                        <div class="font_xxs padd05">
+                    <div class="bar_time d_flex just_center align_cnt white">
+                        <div class="font_xxs">
                             0:25
                         </div>
                         <div class="bar">
                             
                         </div>
-                        <div class="font_xxs padd05">
+                        <div class="font_xxs">
                             4:35
                         </div>
                     </div>
                 </div>
 
-                <div class="right col-4 d_flex just_end white">
-                    <div class="padd05">
+                <div class="right col-4 d_flex just_end white font_xs align_cnt">
+                    <div>
                         <i class="fa-solid fa-list"></i>
                     </div>
-                    <div class="padd05">
+                    <div>
                         <i class="fa-solid fa-display"></i>
                     </div>
-                    <div class="padd05">
+                    <div>
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
                     <div class="bar vol">

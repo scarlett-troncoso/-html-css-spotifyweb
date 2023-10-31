@@ -147,6 +147,12 @@ main{
     font-size: x-large;
 }
 
+/*Utility Hover*/
+
+.ho_white:hover{
+    color: var(--white-normal);
+}
+
 /* #region debug */
 /* Debug */
     .debug .upgrade{
@@ -261,6 +267,10 @@ main{
     margin-right: 0.5rem;
 }
 
+.icon_plus:hover{
+    background-color: var(--white-normal);
+}
+
 .utente{
     height: 25%;
     width: 100%;
@@ -312,7 +322,7 @@ section{
 .select_horizontal{
     width: 2rem;
     height: 0.15rem;
-    
+
 }
 
 /* *****SECTIONS RECENTLY, CREATO E ARTISTI***** */
@@ -334,6 +344,30 @@ section{
     height: 200px;
     width: 150px;
     text-align: center;
+}
+
+.card_play{
+    position: relative;
+}
+
+.ho_play{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.ho_play:hover{
+    content: "&play";
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.399);
+    color: var(--white-normal);
+}
+
+.card_play> img{
+    width: 100%;
 }
 
 .card> img{
@@ -425,6 +459,10 @@ main::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
+.brano_nome:hover{
+    text-decoration: underline;
+}
+
 .bar{
     width:350px;
     height: 3px;
@@ -490,8 +528,6 @@ main::-webkit-scrollbar-thumb {
     .cuore_folder{
         display: block;
     }
-
-    
 }
 
 /* breackpoint s */

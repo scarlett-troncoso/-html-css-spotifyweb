@@ -53,6 +53,10 @@ main{
     padding: 1rem;
 }
 
+.pd_top1{
+    padding-top: 1rem;
+}
+
 .mg_auto{
     margin: auto;
 }
@@ -81,6 +85,10 @@ main{
     align-items: center;
 }
 
+.flx_direc_col{
+    flex-direction: column;
+}
+
 .white{
     color: var(--white-normal);
 }
@@ -100,6 +108,11 @@ main{
 .xs_bold{
     font-size: x-small;
     font-weight: 600;
+}
+
+.s_bold{
+    font-size: small;
+    font-weight: bold;
 }
 
 .font_65{
@@ -178,12 +191,10 @@ main{
 
 /* #region header */
 .upgrade{
-    height: 80px;
+    height: 70px;
     width: 100%;
     position: fixed;
     z-index: 1;
-    display: flex;
-    justify-content: flex-end;
     background-color: var(--black-trans);
 }
 
@@ -195,6 +206,21 @@ main{
     padding: 0.5rem 1.75rem 0.5rem 1.75rem;
 }
 
+.sidebar{
+    /*position: relative; ultimo*/
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--dark-primary);
+    color: var(--grey-medium);
+    padding-bottom: 70px;
+}
+
+.prima_parte{
+    height: 75%;
+}
+
 .logo{
     width: 155px;
 } 
@@ -202,16 +228,6 @@ main{
 .logo_small{
     width: 80%;
     margin: auto;
-}
-
-.sidebar{
-    position: relative; /*ultimo*/
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 2;
-    background-color: var(--dark-primary);
-    color: var(--grey-medium);
 }
 
 .select{
@@ -246,9 +262,13 @@ main{
 }
 
 .utente{
-    position: absolute; /*ultimo*/
-    bottom: 65px;
+    height: 25%;
     width: 100%;
+    /*position: relative;
+    top: 130px; ---- seconda opzione */
+    /*position: absolute;
+    bottom: 65px;
+    width: 100%; --- questa era la prima opzione ma non spariva alla chiusura del browser*/ 
 }
 
 .installa> i, .jhon> i{
@@ -290,6 +310,10 @@ section{
 }
 
 /* *****SECTIONS RECENTLY, CREATO E ARTISTI***** */
+.big_title{
+    width: calc(100% - 200px);
+}
+
 .cards_cont{
     width: calc(100% - 200px);
     /*padding-left: 210px;*/
@@ -302,15 +326,31 @@ section{
 .card{
     height: 200px;
     width: 150px;
+    text-align: center;
 }
 
 .card> img{
     width: 100%;
 }
 
+.title{
+    padding: 0.5rem 0.25rem;
+    width: 100%;
+    line-height: 0.75rem;
+}
+
+.card> h6, .big_title> h6{
+    color: var(--grey-playlist);
+}
+
+.big_title> h6{
+    padding: 0.5rem 0;
+}
+
 .recently{
     padding-top: 150px;
 }
+
 .artisti{
     padding-bottom: 100px; /*padding per sotrarre il footer*/
 }
@@ -401,6 +441,25 @@ main::-webkit-scrollbar-thumb {
     .d_none_xs{
         display: none;
     } 
+
+    /*.installa> i, .jhon> i{
+        position: relative;
+        top: 350px;
+        width: 100%; evaluar
+    }*/
+
+    .text_center_xs{
+        text-align: center;
+    }
+
+    .installa> i{
+        font-size: 0.75rem;
+        padding: 0.5rem 0;
+    }
+    .jhon> i{
+        font-size: 1.5rem;
+        padding: 0;
+    }
 
     .d_block_xs{
         display: block;

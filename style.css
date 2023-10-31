@@ -309,6 +309,12 @@ section{
     font-weight: bold;
 }
 
+.select_horizontal{
+    width: 2rem;
+    height: 0.15rem;
+    
+}
+
 /* *****SECTIONS RECENTLY, CREATO E ARTISTI***** */
 .big_title{
     width: calc(100% - 200px);
@@ -338,6 +344,10 @@ section{
     padding: 0.5rem 0.25rem;
     width: 100%;
     line-height: 0.75rem;
+}
+
+.big_title> h3{
+    font-size: larger;
 }
 
 .card> h6, .big_title> h6{

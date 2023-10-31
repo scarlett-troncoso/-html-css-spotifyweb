@@ -312,6 +312,7 @@ section{
 /* *****SECTIONS RECENTLY, CREATO E ARTISTI***** */
 .big_title{
     width: calc(100% - 200px);
+    padding: 0 1rem;
 }
 
 .cards_cont{
@@ -470,10 +471,11 @@ main::-webkit-scrollbar-thumb {
         padding: 0.5rem;
     }
 
-    .cards_cont, .line_menu{
+    .cards_cont, .line_menu, .big_title{
         /*padding-left: 55px;*/
         width: calc(100% - 45px);
     }
+
 
     .cuore_folder{
         display: block;

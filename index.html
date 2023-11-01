@@ -13,11 +13,11 @@
 <body class="d">
     <header id="side_header">
         <div class="upgrade padd1 d_flex just_end">
-            <div class="btn_upgrade light_bold_65 d_flex align_cnt">
-                <a href="#">EFFETTUA L'UPGRADE </a>
+            <div class="btn_cont light_bold_65 d_flex align_cnt">
+                <a class="btn_upgrade" href="#">EFFETTUA L'UPGRADE </a>
             </div>
         </div>
-        <div class="sidebar">
+        <div class="sidebar d_flex flx_direc_col">
             <div class="prima_parte">
                 <div class="logo padd1">
                     <img class="d_none_xs" src="./img/logo.svg" alt="">
@@ -56,7 +56,7 @@
                 <ul class="playlist d_none_xs">
                     <li class="x_bold_75 white">PLAYLIST</li>
                     <li>
-                        <div class="icon_text d_flex ho_white">                     
+                        <div class="icon_text d_flex ho_crea_playlist">                     
                             <div class="icon_plus">
                                 <strong>+</strong>
                             </div>
@@ -72,19 +72,22 @@
                     <li class="bold_65 ho_white">Nome Playlist</li>
                 </ul>
             </div>
-            <div class="utente d_flex just_end flx_direc_col">
-                <div class="padd05 d_flex flx_direc_col text_center_xs">
-                    <div class="installa xs_bold ho_white">
-                        <i class="fa-regular fa-circle-down "></i>
-                        <strong class="d_none_xs">Installa app</strong>
-                    </div>
-                    <div class="padd05 d_none_xs"><hr></div>
-                    <div class="jhon x_bold_75">
-                        <i class="fa-solid fa-circle-user"></i>
-                        <strong class="d_none_xs">Jhon Doe</strong>
+            <div class="seconda_parte">
+                <div class="utente d_flex flx_direc_col align_end just_end">
+                    <div class="utente_cont padd05 d_flex flx_direc_col text_center_xs">
+                        <div class="installa xs_bold ho_white">
+                            <i class="fa-regular fa-circle-down "></i>
+                            <strong class="d_none_xs">Installa app</strong>
+                        </div>
+                        <div class="padd05 d_none_xs"><hr></div>
+                        <div class="jhon x_bold_75">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <strong class="d_none_xs">Jhon Doe</strong>
+                        </div>
                     </div>
                 </div>
-             </div>
+            </div>
+        
         </div>
     </header>
 
@@ -286,7 +289,7 @@
                             <i class="fa-solid fa-backward-step"></i>
                         </div>
                         <div class="font_xl">
-                            <i class="fa-regular fa-circle-play"></i>
+                            <i class="fa-regular fa-circle-play ho_footer_play"></i>
                         </div>
                         <div>
                             <i class="fa-solid fa-forward-step"></i>
@@ -300,8 +303,12 @@
                         <div class="font_xxs">
                             0:25
                         </div>
-                        <div class="bar">
+                        <div class="progress_bar">
+                            <div class="bar"></div>
                             
+                            <div class="progress d_flex align_cnt font_xs">
+                                <i class="fa-solid fa-circle circle_on"></i>
+                            </div>
                         </div>
                         <div class="font_xxs">
                             4:35
@@ -319,9 +326,14 @@
                     <div>
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
-                    <div class="bar vol">
-                            
+                    <div class="vol_bar">
+                        <div class="bar vol"></di>
+                        
+                        <div class="volumen d_flex align_cnt font_xs">
+                            <i class="fa-solid fa-circle circle_on"></i>
+                        </div>
                     </div>
+                        
                 </div>
 
             </div>

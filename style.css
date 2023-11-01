@@ -85,6 +85,10 @@ main{
     align-items: center;
 }
 
+.align_end{
+    align-items: end;
+}
+
 .flx_direc_col{
     flex-direction: column;
 }
@@ -200,11 +204,11 @@ main{
     height: 70px;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--black-trans);
 }
 
-.btn_upgrade> a{
+.btn_upgrade{
     border: 1px solid var(--white-normal);
     text-decoration: none;
     color: var(--white-normal);
@@ -212,19 +216,21 @@ main{
     padding: 0.5rem 1.75rem 0.5rem 1.75rem;
 }
 
+.btn_upgrade:hover{
+    scale: 115%;
+}
+
 .sidebar{
-    /*position: relative; ultimo*/
-    height: 100%;
+    height: calc(100% - 70px);
     width: 200px;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     background-color: var(--dark-primary);
     color: var(--grey-medium);
-    padding-bottom: 70px;
 }
 
 .prima_parte{
-    height: 75%;
+    height: 85%;
 }
 
 .logo{
@@ -257,6 +263,13 @@ main{
     line-height: 2rem;
 }
 
+.ho_crea_playlist:hover{
+    color: white;
+    & .icon_plus{
+        background-color: var(--white-normal);
+    }
+}
+
 .icon_plus{
     width: 2rem;
     height: 2rem;
@@ -267,18 +280,12 @@ main{
     margin-right: 0.5rem;
 }
 
-.icon_plus:hover{
-    background-color: var(--white-normal);
+.seconda_parte{
+    height: 15%;
 }
 
 .utente{
-    height: 25%;
     width: 100%;
-    /*position: relative;
-    top: 130px; ---- seconda opzione */
-    /*position: absolute;
-    bottom: 65px;
-    width: 100%; --- questa era la prima opzione ma non spariva alla chiusura del browser*/ 
 }
 
 .installa> i, .jhon> i{
@@ -306,6 +313,7 @@ section{
     width: calc(100% - 200px);
     align-items: center;
     position: fixed;
+    z-index: 1;
     background-color: var(--grey-dark);
     color: var(--grey-medium);
 }
@@ -428,9 +436,14 @@ main::-webkit-scrollbar-thumb {
     width: 100%;
     bottom: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 4; /*ultimooooo era 2*/
 }
 
+.col-4{
+    width: calc(100% / 12 * 4);
+}
+
+/* DIV LEFT */
 .reproduction> .row{
     width: 100%;
     color: var(--grey-playlist);
@@ -446,10 +459,6 @@ main::-webkit-scrollbar-thumb {
     padding: 0 0.5rem;
 }
 
-.col-4{
-    width: calc(100% / 12 * 4);
-}
-
 .img_reprod{
     height: 35px;
     width: 35px;
@@ -463,18 +472,68 @@ main::-webkit-scrollbar-thumb {
     text-decoration: underline;
 }
 
-.bar{
-    width:350px;
-    height: 3px;
-    background-color: var(--grey-playlist);
-    border-radius: 20px;
+/* DIV CENTER */
+.ho_footer_play:hover{
+    scale: 115%;
+}
+
+.progress_bar{
+    position: relative;
+    width: 100%;
     margin: 0 1rem;
 }
 
-.bar.vol{
-    width:100px;
+.bar{
+    width:100%;
+    height: 3px;
+    background-color: var(--grey-time);
+    border-radius: 20px;
+}
+
+.progress, .volumen{
+    position: absolute;
+    top:0;
+    width:50%;
+    height: 3px;
+    background-color: var(--grey-playlist);
+    border-radius: 20px;
+}
+
+.circle_on{
+    position: absolute;
+    right: 0;
+    color: transparent;
+}
+
+.progress:hover{
+    background-color: var(--green-select);
+    & .circle_on{
+        color: var(--grey-playlist);
+    }
+}
+
+/* DIV RIGHT */
+.vol_bar{
+    position: relative;
+    width: 100px;
     margin: 0;
 }
+
+.bar.vol{
+    width:100%;
+    height: 3px;
+    background-color: var(--grey-time);
+    border-radius: 20px;
+}
+
+.volumen:hover{
+    background-color: var(--green-select);
+    & .circle_on{
+        color: var(--grey-playlist);
+    }
+}
+
+
 /* #endregion footer*/
 
 

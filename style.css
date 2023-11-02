@@ -7,9 +7,7 @@
 
 body{
     overflow: auto;
-    font-family: 'Montserrat';/*, sans-serif;
-    /*font-family: 'Poppins', sans-serif;
-    font-family: 'PT Sans', sans-serif;*/
+    font-family: 'Montserrat';
 }
 
 main{
@@ -230,7 +228,7 @@ main{
 }
 
 .prima_parte{
-    height: 85%;
+    height: 100%;
 }
 
 .logo{
@@ -281,14 +279,14 @@ main{
 }
 
 .seconda_parte{
-    height: 15%;
+    height: calc(25% - 70px);
 }
 
 .utente{
     width: 100%;
 }
 
-.installa> i, .jhon> i{
+.utente_cont> i, .jhon> i{
     padding: 0 0.5rem;
 }
 
@@ -341,7 +339,6 @@ section{
 
 .cards_cont{
     width: calc(100% - 200px);
-    /*padding-left: 210px;*/
     flex-wrap: wrap;
     display: flex;
     gap: 8px;
@@ -420,7 +417,6 @@ main::-webkit-scrollbar-track {
  
 main::-webkit-scrollbar-thumb {
   background-color: rgb(88, 88, 88);
-  /*outline: 1px solid rgb(126, 125, 125);*/
   width: 5px;
   border-radius: 20px;
 }
@@ -436,7 +432,7 @@ main::-webkit-scrollbar-thumb {
     width: 100%;
     bottom: 0;
     position: fixed;
-    z-index: 4; /*ultimooooo era 2*/
+    z-index: 4;
 }
 
 .col-4{
@@ -550,23 +546,21 @@ main::-webkit-scrollbar-thumb {
         display: none;
     } 
 
-    /*.installa> i, .jhon> i{
-        position: relative;
-        top: 350px;
-        width: 100%; evaluar
-    }*/
-
     .text_center_xs{
         text-align: center;
     }
 
-    .installa> i{
+    .seconda_parte{
+        height: calc(85% - 70px);
+    }
+
+    .utente_cont{
         font-size: 0.75rem;
         padding: 0.5rem 0;
     }
-    .jhon> i{
+
+    .jhon{
         font-size: 1.5rem;
-        padding: 0;
     }
 
     .d_block_xs{
@@ -579,7 +573,6 @@ main::-webkit-scrollbar-thumb {
     }
 
     .cards_cont, .line_menu, .big_title{
-        /*padding-left: 55px;*/
         width: calc(100% - 45px);
     }
 
@@ -593,7 +586,6 @@ main::-webkit-scrollbar-thumb {
 
 @media screen and (min-width:481px) and (max-width:767px) { /* screenshot s coincide con 550 px */
     .cards_cont, .line_menu{
-        /*padding-left: 210px;*/
         width: calc(100% - 200px);
     }
 
@@ -607,7 +599,6 @@ main::-webkit-scrollbar-thumb {
 @media screen and (min-width:768px) and (max-width:1199px) {
 
     .cards_cont, .line_menu{
-        /*padding-left: 210px;*/
         width: calc(100% - 200px);
     }
 
@@ -619,7 +610,7 @@ main::-webkit-scrollbar-thumb {
 
 /* breackpoint lg */
 
-@media screen and (min-width:1200px) { /*screenshot lg coincide con 1270px*/
+@media screen and (min-width:1200px) {
     .cards_cont{
         gap: 10px;
     }

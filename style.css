@@ -616,6 +616,10 @@ main::-webkit-scrollbar-thumb {
     .cuore_folder{
         display: block;
     }
+
+    .cover_off_xs{ /* ***BONUS 1*** */
+        display: none;
+    }
 }
 
 /* breackpoint s */
@@ -627,6 +631,10 @@ main::-webkit-scrollbar-thumb {
 
     .cuore_folder{
         display: block;
+    }
+
+    .cover_off_s{ /* ***BONUS 1*** */
+        display: none;
     }
 }
 
@@ -642,6 +650,10 @@ main::-webkit-scrollbar-thumb {
         height: 220px;
         width: 125px;
     }
+
+    .cover_off_md{ /* ***BONUS 1*** */
+        display: none;
+    }
 }
 
 /* breackpoint lg */
@@ -651,3 +663,4 @@ main::-webkit-scrollbar-thumb {
         gap: 10px;
     }
 }
+

@@ -233,7 +233,24 @@ main{
 
 .logo{
     width: 155px;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-name: crescent;
 } 
+
+@keyframes crescent{ /* BONUS 3 */
+    0%{
+        width: 155px;
+    }
+
+    50%{
+        width: 200px;
+    }
+
+    100%{
+        width: 155px;
+    }
+}
 
 .logo_small{
     width: 80%;
@@ -572,6 +589,23 @@ main::-webkit-scrollbar-thumb {
     .logo{
         width: 45px;
         padding: 0.5rem;
+        animation-duration: 1.5s;
+        animation-delay: 0.5s;
+        animation-name: crescent;
+    }
+    
+    @keyframes crescent{ /* ***BONUS*** 3 */
+        0%{
+            width: 45px;
+        }
+    
+        50%{
+            width: 55px;
+        }
+    
+        100%{
+            width: 45px;
+        }
     }
 
     .cards_cont, .line_menu, .big_title{

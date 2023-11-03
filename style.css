@@ -612,13 +612,16 @@ main::-webkit-scrollbar-thumb {
         width: calc(100% - 45px);
     }
 
-
     .cuore_folder{
         display: block;
     }
 
     .cover_off_xs{ /* ***BONUS 1*** */
         display: none;
+    }
+
+    .icon_right> div{
+        padding: 0.25rem 0;
     }
 }
 
@@ -636,6 +639,18 @@ main::-webkit-scrollbar-thumb {
     .cover_off_s{ /* ***BONUS 1*** */
         display: none;
     }
+
+    .d_none_s{
+        display: none;
+    } 
+
+    .d_block_s{
+        display: block;
+    }
+
+    .icon_right> div{
+        padding: 0.25rem 0;
+    }
 }
 
 /* breackpoint md */
@@ -644,11 +659,6 @@ main::-webkit-scrollbar-thumb {
 
     .cards_cont, .line_menu{
         width: calc(100% - 200px);
-    }
-
-    .card{
-        height: 220px;
-        width: 125px;
     }
 
     .cover_off_md{ /* ***BONUS 1*** */
@@ -663,4 +673,6 @@ main::-webkit-scrollbar-thumb {
         gap: 10px;
     }
 }
+
+
 

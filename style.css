@@ -296,7 +296,7 @@ main{
 }
 
 .seconda_parte{
-    height: calc(25% - 70px);
+    height: calc(25% - 5px);
 }
 
 .utente{
